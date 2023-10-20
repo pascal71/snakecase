@@ -1,0 +1,12 @@
+mkdir -p github.com/pascal71/snakecase
+cd github.com/pascal71/snakecase
+go mod init github.com/pascal71/snakecase
+
+git init
+git remote add origin git@github.com:pascal71/camelcase.git
+git push --set-upstream origin master
+git add .
+git commit -m 'Initial commit'
+git push origin master
+git tag v1.0.0
+git push --tags
